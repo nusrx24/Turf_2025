@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://ep-summer-wind-adj1g3dr-pooler.c-2.us-east-1.aws.neon.tech:5432/turf_management?sslmode=require
+    username: neondb_owner
+    password: npg_gbV4antovp0K
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update   # auto-create tables; switch to validate in production
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
+server:
+  port: 8080
+
+app:
+  jwt:
+    secret: "change-this-very-long-secret-key-256bits-min"
+    expirationMillis: 86400000

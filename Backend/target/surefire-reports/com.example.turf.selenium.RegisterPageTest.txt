@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: com.example.turf.selenium.RegisterPageTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.050 s <<< FAILURE! -- in com.example.turf.selenium.RegisterPageTest
+com.example.turf.selenium.RegisterPageTest.testUserRegistration_Success -- Time elapsed: 0.025 s <<< ERROR!
+java.lang.NoClassDefFoundError: org/openqa/selenium/internal/FindsById
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1012)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at com.example.turf.selenium.RegisterPageTest.testUserRegistration_Success(RegisterPageTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.FindsById
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 13 more
+
+com.example.turf.selenium.RegisterPageTest.testUserRegistration_ExistingEmail -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.NoClassDefFoundError: org/openqa/selenium/internal/FindsById
+	at com.example.turf.selenium.RegisterPageTest.testUserRegistration_ExistingEmail(RegisterPageTest.java:45)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.ClassNotFoundException: org.openqa.selenium.internal.FindsById
+	... 4 more
+
