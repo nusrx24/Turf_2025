@@ -1,0 +1,468 @@
+/* TurfResult.css - Complete styling for Turf Results Component */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Results Section */
+.turf-results-section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Success Message */
+.booking-success-message {
+  background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+  border: 2px solid #86efac;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  animation: slideIn 0.5s ease-out;
+  box-shadow: 0 4px 20px rgba(34, 197, 94, 0.2);
+}
+
+.success-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.success-content h4 {
+  color: #166534;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.success-content p {
+  color: #15803d;
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+}
+
+.success-content strong {
+  font-weight: 600;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Results Header */
+.results-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.results-header h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.results-count {
+  color: #6b7280;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Turf Results Grid */
+.turf-results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Turf Card */
+.turf-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid #f3f4f6;
+}
+
+.turf-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Turf Image */
+.turf-image {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+
+.turf-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.turf-card:hover .turf-image img {
+  transform: scale(1.05);
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+}
+
+.image-placeholder span {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.image-placeholder p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Turf Details */
+.turf-details {
+  padding: 1.5rem;
+}
+
+/* Turf Header */
+.turf-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.turf-type {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.turf-price {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #10b981;
+  background: linear-gradient(135deg, #dcfce7, #f0fdf4);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #86efac;
+}
+
+/* Turf Info */
+.turf-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.info-icon {
+  font-size: 1rem;
+  width: 1.2rem;
+  text-align: center;
+}
+
+/* Turf Description */
+.turf-description {
+  margin-bottom: 1rem;
+}
+
+.turf-description p {
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Amenities */
+.turf-amenities {
+  margin-bottom: 1rem;
+}
+
+.turf-amenities h5 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 0 0 0.5rem 0;
+}
+
+.amenities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.amenity-tag {
+  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+  color: #0369a1;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid #bae6fd;
+}
+
+/* Availability Status */
+.availability-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+  border-radius: 8px;
+  border: 1px solid #86efac;
+}
+
+.status-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.status-indicator.available {
+  background: #22c55e;
+  box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.3);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.availability-status span:last-child {
+  color: #15803d;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Book Now Button */
+.book-now-button {
+  width: 100%;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.book-now-button:hover {
+  background: linear-gradient(135deg, #059669, #047857);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
+}
+
+.book-now-button:active {
+  transform: translateY(0);
+}
+
+.book-now-button:focus {
+  outline: 3px solid rgba(16, 185, 129, 0.3);
+  outline-offset: 2px;
+}
+
+.book-now-button::before {
+  content: '🏟️';
+  margin-right: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .turf-results-section {
+    padding: 1rem;
+  }
+  
+  .turf-results-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .results-header h3 {
+    font-size: 1.75rem;
+  }
+  
+  .turf-image {
+    height: 200px;
+  }
+  
+  .turf-details {
+    padding: 1.25rem;
+  }
+  
+  .turf-header {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+  
+  .turf-type {
+    font-size: 1.2rem;
+  }
+  
+  .turf-price {
+    font-size: 1.3rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .booking-success-message {
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .success-icon {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .turf-results-section {
+    padding: 0.5rem;
+  }
+  
+  .turf-card {
+    border-radius: 16px;
+  }
+  
+  .turf-image {
+    height: 180px;
+  }
+  
+  .turf-details {
+    padding: 1rem;
+  }
+  
+  .results-header h3 {
+    font-size: 1.5rem;
+  }
+  
+  .turf-type {
+    font-size: 1.1rem;
+  }
+  
+  .turf-price {
+    font-size: 1.2rem;
+  }
+  
+  .book-now-button {
+    padding: 0.875rem 1.25rem;
+    font-size: 0.95rem;
+  }
+  
+  .booking-success-message {
+    margin-bottom: 1rem;
+    border-radius: 12px;
+  }
+  
+  .success-content h4 {
+    font-size: 1.1rem;
+  }
+  
+  .success-content p {
+    font-size: 0.9rem;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .turf-card {
+    border: 2px solid #000;
+  }
+  
+  .book-now-button {
+    border: 2px solid #000;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .turf-card,
+  .turf-image img,
+  .book-now-button,
+  .booking-success-message,
+  .status-indicator.available {
+    animation: none;
+    transition: none;
+  }
+  
+  .turf-card:hover {
+    transform: none;
+  }
+  
+  .book-now-button:hover {
+    transform: none;
+  }
+}
+
+/* Loading state */
+.turf-results-grid.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Empty state */
+.no-results {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #6b7280;
+}
+
+.no-results h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #374151;
+}
+
+.no-results p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Ensure consistent spacing */
+.turf-results-section * {
+  box-sizing: border-box;
+}
